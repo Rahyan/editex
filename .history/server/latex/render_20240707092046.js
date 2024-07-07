@@ -48,7 +48,6 @@ const renderLatexWithNodeLatex = (content, outputPath, callback) => {
 const renderLatexWithPdflatex = (content, outputPath, callback) => {
   const inputDir = path.dirname(outputPath);
   const inputPath = path.join(inputDir, 'input.tex');
-  const logPath = path.join(inputDir, 'pdflatex.log');
 
   // Ensure the directory exists
   if (!fs.existsSync(inputDir)) {
@@ -57,20 +56,11 @@ const renderLatexWithPdflatex = (content, outputPath, callback) => {
 
   fs.writeFileSync(inputPath, content);
 
-  const command = `pdflatex -output-directory=${inputDir} ${inputPath} > ${logPath} 2>&1`;
+  const command = `pdflatex -output-directory=${inputDir} ${inputPath}`;
   exec(command, (error, stdout, stderr) => {
     if (error) {
       console.error(`Error executing pdflatex: ${stderr}`);
-      // Read the log file and include its contents in the callback
-      fs.readFile(logPath, 'utf8', (logErr, data) => {
-        if (logErr) {
-          console.error('Error reading pdflatex log file:', logErr);
-          callback(stderr, null);
-        } else {
-          console.error('pdflatex log:', data);
-          callback(stderr, data);
-        }
-      });
+      callback(stderr, null);
       return;
     }
     console.log(`pdflatex output: ${stdout}`);

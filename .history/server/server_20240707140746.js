@@ -11,7 +11,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIo(server);
 
-mongoose.connect('mongodb://127.0.0.1/editex', {
+mongoose.connect('mongodb://0.0.0.0/editex', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });

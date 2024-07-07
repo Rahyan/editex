@@ -1,5 +1,5 @@
 // test-latex.js
-const { exec } = require('child_process');
+const latex = require('node-latex');
 const fs = require('fs');
 const path = require('path');
 
@@ -10,16 +10,36 @@ Hello, World!
 \\end{document}
 `;
 
-const inputPath = path.join(__dirname, 'test.tex');
-const outputPath = path.join(__dirname, 'test.pdf');
+const inputDir = path.join(__dirname, 'latex_test');
+const outputPath = path.join(inputDir, 'test.pdf');
+const errorLogPath = path.join(inputDir, 'latexerrors.log');
 
-fs.writeFileSync(inputPath, content);
+if (!fs.existsSync(inputDir)) {
+  fs.mkdirSync(inputDir, { recursive: true });
+}
 
-exec(`pdflatex -output-directory=${path.dirname(outputPath)} ${inputPath}`, (error, stdout, stderr) => {
-  if (error) {
-    console.error(`Error: ${stderr}`);
-    return;
-  }
-  console.log(`Output: ${stdout}`);
-  console.log(`PDF generated at: ${outputPath}`);
+fs.writeFileSync(path.join(inputDir, 'test.tex'), content);
+
+const options = {
+  errorLogs: errorLogPath, // Capture error logs
+  inputs: inputDir, // Directory to search for includes
+};
+
+const output = fs.createWriteStream(outputPath);
+const pdf = latex(fs.createReadStream(path.join(inputDir, 'test.tex')), options);
+
+pdf.pipe(output);
+pdf.on('error', (err) => {
+  console.error(`Error executing LaTeX with node-latex: ${err}`);
+  fs.readFile(errorLogPath, 'utf8', (logErr, data) => {
+    if (logErr) {
+      console.error('Error reading LaTeX error log file:', logErr);
+    } else {
+      console.error('LaTeX error log:', data);
+    }
+  });
+});
+
+pdf.on('finish', () => {
+  console.log(`PDF generated at: ${outputPath} using node-latex`);
 });

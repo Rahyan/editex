@@ -13,16 +13,20 @@ EdiTeX is a collaborative LaTeX editor designed to simplify the process of creat
 
 To get started with EdiTeX, follow these steps:
 
-### Website
+### Online Editor
+
+#### Website
 
 - EdiTeX is available at https://editex.unstopp4ble.com/
 
-### Prerequisites
+### Local Installation
+
+#### Prerequisites
 
 - Node.js
 - LaTeX distribution (for local LaTeX compilation)
 
-### Installation
+#### Installation
 
 1. Clone the EdiTeX repository: ```git clone https://github.com/Rahyan/editex.git```
 2. Navigate to the repo.

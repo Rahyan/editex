@@ -1,0 +1,5 @@
+{
+    "terminal.integrated.env.windows": {
+        "PATH": "C:\\Program Files\\MiKTeX\\miktex\\bin\\x64;${env:PATH}"
+    }
+}

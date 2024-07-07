@@ -16,7 +16,7 @@ router.post('/', (req, res) => {
   }
 
   const outputDir = path.join(__dirname, '..', 'latex');
-  const outputPath = path.join(outputDir, 'input.pdf');
+  const outputPath = path.join(outputDir, 'output.pdf');
 
   // Ensure output directory exists
   if (!fs.existsSync(outputDir)) {
