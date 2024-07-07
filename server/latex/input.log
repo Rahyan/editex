@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.7)  7 JUL 2024 08:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.7.7)  7 JUL 2024 08:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,38 +6,36 @@ entering extended mode
 (D:/autre/editex/server/latex/input.tex
 LaTeX2e <2024-06-01> patch level 2
 L3 programming layer <2024-05-27>
-(C:\Users\rahya\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
-Document Class: article 2024/02/08 v1.4n Standard LaTeX document class
-(C:\Users\rahya\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
-File: size10.clo 2024/02/08 v1.4n Standard LaTeX file (size option)
-)
-\c@part=\count194
-\c@section=\count195
-\c@subsection=\count196
-\c@subsubsection=\count197
-\c@paragraph=\count198
-\c@subparagraph=\count199
-\c@figure=\count266
-\c@table=\count267
-\abovecaptionskip=\skip49
-\belowcaptionskip=\skip50
-\bibindent=\dimen141
-)
-(C:\Users\rahya\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2024/06/02 v24.6 The Babel package
-\babel@savecnt=\count268
-\U@D=\dimen142
-\l@unhyphenated=\language79
 
-(C:\Users\rahya\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
-\bbl@readstream=\read2
-\bbl@dirlevel=\count269
+! LaTeX Error: There's no line here to end.
 
-*************************************
-* Local config file bblopts.cfg used
-*
-(C:\Users\rahya\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \\d
+       ocumentclass{article}
+? 
+! Emergency stop.
+ ...                                              
+                                                  
+l.1 \\d
+       ocumentclass{article}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+ 
+Here is how much of TeX's memory you used:
+ 18 strings out of 473903
+ 596 string characters out of 5726580
+ 1925908 words of memory out of 5000000
+ 22985 multiletter control sequences out of 15000+600000
+ 558069 words of font info for 36 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 12i,0n,13p,94b,14s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!
+opts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
 (C:\Users\rahya\AppData\Local\Programs\MiKTeX\tex/latex/babel-english\english.l
@@ -316,3 +314,133 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 (C:\Users\rahya\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count297
+\l__pdf_internal_box=\box54
+)
+No file input.aux.
+\openout1 = `input.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: letterpaper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 443.57848pt, 85.35826pt)
+* v-part:(T,H,B)=(56.9055pt, 681.15898pt, 56.9055pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=443.57848pt
+* \textheight=681.15898pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=49.79231pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+(C:\Users\rahya\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count298
+\scratchdimen=\dimen166
+\scratchbox=\box55
+\nofMPsegments=\count299
+\nofMParguments=\count300
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count301
+\MPscratchDim=\dimen167
+\MPnumerator=\count302
+\makeMPintoPDFobject=\count303
+\everyMPtoPDFconversion=\toks25
+)
+(C:\Users\rahya\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(C:\Users\rahya\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+)) (C:\Users\rahya\AppData\Local\Programs\MiKTeX\tex/latex/graphics\color.sty
+Package: color 2024/01/14 v1.3d Standard LaTeX Color (DPC)
+(C:\Users\rahya\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 149.
+(C:\Users\rahya\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathcolor.ltx)
+)
+Package hyperref Info: Link coloring ON on input line 19.
+\@outlinefile=\write3
+\openout3 = `input.out'.
+
+
+
+LaTeX Warning: Reference `fig:frog' on page 1 undefined on input line 40.
+
+
+LaTeX Warning: File `frog.jpg' not found on input line 46.
+
+
+! Package pdftex.def Error: File `frog.jpg' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 ...degraphics[width=0.25\linewidth]{frog.jpg}
+                                                  
+? 
+! Emergency stop.
+ ...                                              
+                                                  
+l.46 ...degraphics[width=0.25\linewidth]{frog.jpg}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+ 
+Here is how much of TeX's memory you used:
+ 10737 strings out of 473903
+ 170511 string characters out of 5726580
+ 1928908 words of memory out of 5000000
+ 33491 multiletter control sequences out of 15000+600000
+ 563605 words of font info for 55 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 75i,6n,79p,450b,415s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!
