@@ -1,0 +1,25 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EdiTeX</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="editor">
+    <textarea id="editor-area"></textarea>
+    <iframe id="pdf-preview" src=""></iframe>
+    <div>
+      <label for="render-method">Render Method:</label>
+      <select id="render-method">
+        <option value="node-latex">Node LaTeX</option>
+        <option value="pdflatex">pdflatex</option>
+      </select>
+    </div>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/editor.js"></script>
+</body>
+</html>

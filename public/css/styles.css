@@ -1,0 +1,27 @@
+/* public/css/styles.css */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  #editor {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+  }
+  
+  #editor-area {
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+  }
+  
+  #iframe {
+    width: 50%;
+    height: 100%;
+  }
+  
